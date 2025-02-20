@@ -1,0 +1,82 @@
+#container {
+    height: 840px;
+    width: 840px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    grid-gap: 10px;
+}
+
+#container div {
+    background-color: pink;
+    font-size : 1.5em;
+} 
+
+.header {
+    grid-column: 1/span 12;
+    grid-row: 1/2;
+}
+
+.footer {
+    grid-column: 1/13;
+    grid-row: 12/13;
+}
+
+.sidebar {
+    grid-column: 1/span 3;
+    grid-row: 2/12;
+}
+
+.navigation {
+    grid-column: 4/10;
+    grid-row: 2/3;
+}
+
+.main {
+    grid-row: 3/12;
+    grid-column: 4/10;
+}
+
+.ads {
+    grid-column: 10/13;
+    grid-row: 2/12;
+}
+
+@media (width: 720px) {
+    .sidebar {
+        grid-row: 3/12;
+    }
+    .main {
+        grid-row: 3/12;
+        grid-column: 4/13;
+    }
+    .ads {
+        grid-row: 12/13;
+        grid-column: 1/4;
+    }
+    .footer {
+        grid-column: 4/13;
+    }
+    .navigation {
+        grid-column: 1/13;
+    }
+}
+
+/* Question 3 */
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid goldenrod;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 

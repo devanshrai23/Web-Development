@@ -1,0 +1,18 @@
+div {
+    background-color: rgb(35, 126, 206);
+}
+
+form {
+    background-color: aquamarine;
+}
+
+/*Input Boxes and button does not inherit properties by default, therefore it is required to specifiaclly write that thing */
+input {
+    background-color: inherit;
+}
+
+button {
+    background-color: inherit;
+}
+
+/*Note that there are some properties(like height,width,etc) which cannot be inherited directly */

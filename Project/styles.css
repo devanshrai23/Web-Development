@@ -1,0 +1,110 @@
+body {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #D4F1F4;
+}
+
+
+.navbar {
+  background-color: #189AB4;
+}
+
+.nav-link {
+  color: white;
+  opacity: 0.8;
+}
+
+.carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.carousel-caption h5 {
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 5px rgb(5, 68, 94,0.3);
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+  text-shadow: 1px 1px 3px rgb(5, 68, 94,0.3);
+}
+
+
+.carousel-inner img {
+  filter: brightness(50%);
+  object-fit: cover;
+  height: 100vh;
+}
+
+.carousel-overlay {
+  z-index: 10;
+  width: 80%;
+}
+
+.carousel-overlay h1 {
+  font-size: 3rem;
+  font-family: "Pacifico", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 2px 2px 10px rgb(5, 68, 94,0.3);
+}
+
+.carousel-overlay p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  text-shadow: 1px 1px 5px rgb(5, 68, 94,0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carousel-overlay h1 {
+      font-size: 2rem;
+  }
+
+  .carousel-overlay p {
+      font-size: 1.2rem;
+  }
+}
+
+#about-us h2 {
+  font-size: 2.5rem;
+  color: #05445E;
+  text-align: left;
+}
+
+#about-us hr {
+  height: 2px;
+  background-color: #05445E;
+}
+
+#about-us p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+#about-us img {
+  height: 400px;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #189AB4;
+  color: white;
+}
+
+footer a i{
+  font-size: 1.5rem;
+  margin-right: 3px;
+  opacity: 0.7;
+  color: white;
+  transition: color 0.5s ease;
+}
+
+footer a i:hover {
+  color: white;
+  opacity: 1;
+}
+

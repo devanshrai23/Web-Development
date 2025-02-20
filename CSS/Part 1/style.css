@@ -1,0 +1,38 @@
+/* h2 {
+    color: orange;
+}
+    
+p {
+    color: white;
+    background-color: black;
+}
+
+button {
+    color: white;
+    background-color: blue;
+} */
+
+/* RGB colour system */
+/* h1 {
+    color: rgb(210, 255, 210);
+    background-color: rgb(0,90,0);
+} */
+
+/* hexadecimal colour system
+h1 {
+    color: #0ff;
+    background-color: #ff0;
+}
+
+/* Practice : Text Properties */
+h1 {
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-size: 55px;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: double teal underline;
+    text-transform: uppercase;
+    color: #ffa511;
+    font-family:'Times New Roman', Times, serif;
+}

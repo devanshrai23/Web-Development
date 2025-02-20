@@ -1,0 +1,72 @@
+#container {
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;    
+    flex-direction: row;  
+    justify-content: flex-start; 
+    /* flex-wrap: wrap; */
+    /* align-items: flex-end; */
+    /* align-items: baseline;  */
+    justify-content: space-around;
+}
+
+#orange {
+    /* align-self: flex-start; */
+    /* flex-basis: 50px; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 2; */
+    flex: 2 150px;
+} 
+
+#blue {
+    /* flex-basis: 200px; */
+    /* flex-grow: 2; */
+    /* max-width: 300px;  you can also set max and min width or height for an element */
+    /* flex-shrink: 3; */
+    flex: 100px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container div {
+    height: 100px;
+    width: 150px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+/* By default flex direction is row */
+
+/* We do have a reverse row and column option for flexbox direction */
+
+/* For justify content : default is flex-start, flex-end and center are also the other options which are commonly used */
+
+/* justify-content: space-evenly, space-between and space-around are also the other options */
+
+/* nowrap is the default flex-wrap option, wrap option wraps the elements along the main axis, wrap-reverse reverses along the cross axis */
+
+/* Align-items align the items along the cross axis if space is available */
+
+/* align-items: baseline -> it arranges the text or content inside the elements at one baseline */
+
+/* Align-content : It sets the distribution of space between and around content items along a flexbox's cross axis, it also have all the other options that align-items have */ 
+
+/* align-self : It sets the alignment of a flex item along the cross axis of the current line */
+
+/* Flex-sizing : flex-basis : It sets the initial main size of a flex item.
+                flex-grow : It specifies how much of the flex container's remaining space should be allocated to the item's main size.
+                flex-shrink : It specifies how much of the item's main size should be shrinked. (By default every item shrinks with a factor of 1 when its needed) 
+*/
+
+/* Flex Shorthands */
+/* 1). flex: flex-grow flex-shrink flex-basis; */
+/* 2). flex : flex-grow flex-basis; */
+/* 3). flex : flex-grow(unitless); */
+/* 4). flex : flex-basis */

@@ -1,0 +1,37 @@
+span{
+    /* background-color: pink; */
+    border: 2px solid brown;
+    height: 100px;
+    width: 200px;
+    padding: 50px;      
+    margin: 20px;
+}
+
+/* height and width are not set for an inline element. */
+/* margin is set to right and left only for an inline element. */
+/* padding works on all the sides, but the top and bottom may overlap other elements. */
+
+.block {
+    border: 2px solid brown;
+    height: 100px;
+    width: 200px;
+    padding: 50px;      
+    margin: 20px;
+}
+
+/* for a block element all the styles are applied successfully. */
+
+.inblock {
+    border: 2px solid brown;
+    background-color: limegreen;
+    margin: 5px;
+    height: 200px;
+    width: 200px;
+    /* display: inline; */
+    display: inline-block;    /* Use inline-block instead of inline to keep the block element properties and behave like inline element. */
+}
+
+#third {
+    display: none;   /*this property removes the element from the document */
+}
+

@@ -1,0 +1,25 @@
+div {
+    height: 200px;
+    width: 200px;
+    background-color: rgba(0, 26, 255, 0.5);
+    margin: 0 auto;
+    /* transition-duration: 1s;
+    transition-delay: 1s; */
+    transition: margin-top 2s ease-in 0.2s;    /* transition: property duration timing-function delay */
+    /* transition: margin-top 4s, color 1s; */   /* using more then one property in transition */
+}
+
+/* Aplha channel is used to control the opacity of the background color */
+
+#opacity{
+    background-color: #ffa511;
+    opacity: 0.4;
+}
+
+/* opacity sets the opacity of the element */
+
+div:hover {
+    margin-top: 400px;
+    background-color: black;
+    border-radius: 50%;
+}

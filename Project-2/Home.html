@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be Mine?</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleHome.css">
+</head>
+<body>
+    <div class="container">
+        <i class="fas fa-heart heart"></i>
+        <h1>Will You Be Mine?</h1>
+        <p class="lead">You make my world brighter and my heart lighter.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="" class="card-img-top" alt="Her Beautiful Picture">
+                    <div class="card-body text-center">
+                        <p class="card-text">I remember the day jab maine pehli baar tumhe dekha tha (M.P. meet mein), tum thodi shy lag rahi thi uss time, par jab woh innocent aur cute ladki ne apni sweet awaaz mein "Agar Tum Saath Ho" (mera favourite song) gaya, toh woh mere liye ek special moment tha.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="" class="card-img-top" alt="Another Beautiful Picture">
+                    <div class="card-body text-center">
+                        <p class="card-text">I felt happy when I got to know that we were in the same class, and as I remembered (if I'm correct), I also appreciated your singing skills someday after class or in the meet itself. 
+                            The next memory of yours was definitely at the fresher's party. Mujhe perform karna tha uss din, so I didn't notice anyone much and was focusing on myself. But once I finished my performance, 
+                            I started enjoying the vibe of the program even more, and then came Miss Khushi Shorey, who once again attracted me with her singing skills. Not only did you sing very well that day, but you also looked really gorgeous (evidenced by your Miss Beautiful award). That "Lag Jaa Gale" still remains in my heart.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="" class="card-img-top" alt="Yet Another Beautiful Picture">
+                    <div class="card-body text-center">
+                        <p class="card-text">Then came the time jab hum sab mid-sems ke baad free the aur Effervescence ke various activities enjoy kar rahe the. Ek activity jisme hum dono ne participate kiya tha, wo tha OOC Hackathon, jisme thodi bahut chhoti-moti baatein hui aur overall kaafi fun tha.<br>
+                            Phir second day of Effervescence pe hum dono ne saath milke Psychedelia enjoy kiya. Tumne mujhe bataya tha ki tum last night of EFFE pe nahi rahogi, aur maine casually tumhe rokne ki koshish ki kyunki wo humare liye best experience hone wala tha.<br>
+                            Day-3 ka ek fun moment mujhe abhi bhi yaad hai jab maine tumhe call karke ek number of lipsticks laane ke liye bola, aur tum somehow manage karke le bhi aayi, jo meri team ke competition jeetne me kaafi helpful raha.
+                            It was a moment where I was impressed with the way you reacted to the situation and helped me.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <button class="btn btn-custom mt-4" onclick="redirectToResponse()">Yes, I Will!</button>
+    </div>
+
+    <script>
+        function redirectToResponse() {
+            localStorage.setItem("proposalAccepted", "true");
+            window.location.href = "response.html";
+        }
+    </script>
+</body>
+</html>

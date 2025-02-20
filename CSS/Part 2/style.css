@@ -1,0 +1,128 @@
+/* Universal selector */
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1,h3 {    /* In this way you can apply same property to multiple elements together*/
+    color: #b92b27
+}
+
+/* ID Selector : Selects an element based on the value of the element's id attribute */
+#login {
+    background-color: white;
+}
+
+#signup {
+    background-color: #b92b27;
+    color: white;
+}
+
+/* Class Selector : Selects an element on their class attribute */
+.upvote {
+    background-color: green;
+    color: aquamarine;
+}
+
+/* Descendant Selector */
+.post a {
+    color: blueviolet;
+    background-color: yellow;
+}
+
+nav li {    /* In descendant selector you can skip some levels of elements */
+    color: hotpink;
+}
+
+/* Adjacent Sibling Combinator */
+p + h3 {           /* This will make changes to all h3 elements that are immediately after a p element */
+    text-decoration: underline;
+}
+
+.upvote + button {       /* Note that the class upvote and button are at same level to use adjacent sibling combinator(+) */
+    color: white;
+    background-color: cornflowerblue;
+}
+
+/* Child Combinator */
+div > input {      /* In this combinator , the element on the right must be a child of the element on the left(you cannot skip any level here) */
+    background-color: darksalmon;
+}
+
+/* Attribute Selector : Selects elements based on the presence or value of a given attribute(Read more on MDN) */
+input[type="text"] {
+    color : rgb(13, 94, 13);
+}
+
+input[type="password"] {
+    color : darkred;
+}
+
+input[type] {
+    background-color: rgb(178, 178, 207);
+}
+
+/* Set the color for paragraphs inside divs with id "myId" to green */
+#myId p {
+    color: green;
+}
+
+/* div[id="myId"] p {
+    color: green;
+} */
+
+/* Pseudo Class : A keyword added to a selector that specifies a special state of the selected element(s) */
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+h3:hover {
+    color: blue;
+}
+
+button:active {         /* Changes the properties when something is clicked */
+    background-color: aquamarine;
+    color: black;
+}
+
+input[type="radio"]:checked + label {    /* Sibling combinator is used here as we need to make changes to label */
+    color : red;
+    font-weight: bold;
+}
+
+div:nth-of-type(2n) {  /* Read more about nth-of-type and pseudo classes from MDN */
+    background-color: wheat;
+}
+
+/* Pseudo Element : A keyword added to a selector that lets you style a specific part of the selected element(s) */
+h1::first-letter {
+    color: black;
+}
+
+p::first-line {
+    color:darkorange;
+}
+
+p::selection {
+    background-color: rgb(188, 245, 30);
+}
+
+/* What is cascade in CSS? */
+/* The CSS cascade algorithm's job is to select the CSS declarations in order to determine the correct values */
+h3 {
+    background-color: gold;
+}
+
+/* Selector Specificity : Specificity is an algorithm that calculates the weight that is applied to a given CSS declaration.
+1). Priority order : id > class, attribute & pseudo-class > element & pseudo-element 
+2). More selectors -> more specificity 
+3). If specificity is same -> cascading is seen in that case
+*/
+
+/* Note:-
+1). Inline specificity : Inline styles are more specific than id
+2). !important : To show the most specific thing in documnent(aisi property ke saath use hota hai jise hum kabhi change nahi karna chahte)
+example : h2 {
+            background-color : blue !important;
+        }
+*/

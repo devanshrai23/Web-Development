@@ -1,0 +1,50 @@
+.box {
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+    text-align: center;
+    /* Animation Properties */
+    /* animation-name: widthAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 50ms; */
+    /* animation-iteration-count: 5;       /* set this property to infinite for everlasting animation */
+    /* animation-direction: normal; */
+    animation: colorAnimation 4s ease-in 50ms 5 normal;    /* Animation Shorthand */
+}
+
+@keyframes fontAnimation {
+    from {
+        font-size: 20px;
+    }
+    to {
+        font-size: 40px;
+    }
+}
+
+@keyframes colorAnimation {      /* use % instead of from/to for more control */
+    0% {
+        background-color: greenyellow;
+    }
+    50% {
+        background-color: rgb(37, 172, 37);
+    }
+    75%{
+        background-color: rgb(34, 173, 238);
+    }
+    100% {
+        background-color: rgb(34, 67, 216);
+    }
+}
+
+@keyframes widthAnimation {
+    from {
+        width: 10px;
+        background-color: greenyellow;
+    }
+    to {
+        width: 200px;
+        background-color: lightseagreen;
+        border-radius: 20px;
+    }
+}

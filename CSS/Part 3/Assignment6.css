@@ -1,0 +1,28 @@
+div {
+    font-size: medium;
+    height: 150px;
+    width: 300px;
+    background-color: grey;
+    border: 5px dotted black;
+    margin-top: 20px;
+    margin-right: 1em;
+    margin-bottom: 40px;
+    margin-left: 2em;
+    padding: 1em;
+}
+
+#two {    
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+li {
+    display: inline;
+}
+
+/* Note : li(list items) have their display set to "list-item" by default which makes them a bulleted list item.
+When this property is reset by us to "inline", then the bullet points also disappear. In a way, we override the default settings with our CSS.

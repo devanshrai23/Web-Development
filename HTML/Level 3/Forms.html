@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <form action="/action">
+        <div>
+            <label for="username">Username : </label>
+            <input type="text" placeholder="Enter Username" id="username" name="user">
+        </div>
+        <div>
+            <label for="password">Password : </label>
+            <input type="password" placeholder="Enter Password" id="password" name="pass">
+        </div>
+        <div>
+            <label for="age">Age : </label>
+            <input type="number" placeholder="Enter Age" id="age" name="age">
+        </div>
+        <button type="submit">Submit</button>
+        <!-- <button type="button">Hello</button>
+        <button type="reset">Reset</button> -->
+        <!--You can also create buttons using input element-->
+        <!-- <input type="submit" value="Click to submit"> -->
+    </form><hr>
+
+    <form action="https://www.youtube.com/results">
+        <input type="text" placeholder="Search in Youtube" name="search_query">
+        <button type="submit">Search</button>
+    </form><hr>
+
+    <form action="https://www.google.com/search">
+        <input type="text" placeholder="Google Search" name="q">
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>
+
+
+<!--Action Attribute : It is used to define what action needs to be performed when a form is submitted 
+    or where the form data should be sent.-->
+
+<!--Form Elements-->
+<!--Input Element : 1). Used to create multiple form controls.
+                    2). There are multiple types of inputs that can be created using type attribute.
+                    3). Input Element is an Inline element.
+-->
+
+<!--Label Element : 1). It represents a caption for an item in a user interface.
+                    2). for and id attributes must have the same values.
+-->
+
+<!--Name Attribute : It is name of the form contol. Submitted with the form as part of a name/value pair.-->
+
