@@ -100,7 +100,7 @@ function sum(...args) {
 }
 
 
-// Destructing : storing values of array into multiple variables
+// Destructuring : storing values of array into multiple variables
 let names = ["tony","bruce","steve","peter"];
 let [winner,runnerup,...others] = names;
 
@@ -114,4 +114,4 @@ const Stu = {
     city: "delhi",
 };
 
-let {username, password: pass, city = "mumbai"} = Stu;         //destructing an object literal
+let {username, password: pass, city = "mumbai"} = Stu;         //destructuring an object literal
