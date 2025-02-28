@@ -36,3 +36,24 @@ div.classList.add("style");
 div.appendChild(h1);
 div.appendChild(p);
 body.append(div);
+
+let input = document.createElement("input");
+input.setAttribute("placeholder","Enter a name");
+body.append(input);
+
+let btn = document.createElement("button");
+btn.innerText = "click me!";
+body.append(btn);
+btn.setAttribute("id","btn");
+
+let b = document.querySelector("#btn");
+b.classList.add("change");
+
+let heading = document.createElement("h1");
+heading.innerText = "DOM Practice";
+heading.classList.add("heading");
+body.prepend(heading);
+
+let p1 = document.createElement("p");
+p1.innerHTML = "Apna College <b>Delta</b> Practice";
+body.append(p1);

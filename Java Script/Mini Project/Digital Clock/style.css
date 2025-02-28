@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.heading {
+    position: relative;
+    bottom: 150px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.clock-container {
+    position : relative;
+    bottom: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    background: lightblue;
+    cursor: pointer;
+}
+
+button:hover {
+    background: deepskyblue;
+    border: 2px solid lightgrey;
+}
